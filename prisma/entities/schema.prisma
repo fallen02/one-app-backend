@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/entity"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String   @id
+  name          String
+  email         String
+  emailVerified Boolean  @default(false)
+  image         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
