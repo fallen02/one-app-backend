@@ -39,6 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+pnpm-lock.yaml
 
 /app/generated/prisma
 /app/generated/user
