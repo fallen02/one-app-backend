@@ -3,6 +3,7 @@ import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -14,6 +15,7 @@ import {
 import { DashboardSidebarHeader } from "./sidebar-header"
 import {VideoCameraAiIcon} from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { DashboardSidebarFooter } from "./sidebar-footer";
 
 // Menu items.
 const items = [
@@ -50,6 +52,9 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
+      <SidebarFooter>
+        <DashboardSidebarFooter />
+      </SidebarFooter>
     </Sidebar>
   )
 }
